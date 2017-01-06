@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10.0dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/emotion_article_cover"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/emotion_article_item" />
+
+        <TextView
+            android:id="@+id/emotion_article_tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10.0dip"
+            android:gravity="center"
+            android:text="你要爱情，他却只想要暧昧"
+            android:textColor="@color/white"
+            android:textSize="19.0sp"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/emotion_article_tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:gravity="center_vertical"
+        android:text="对不起，你只是我的一个备胎而已。"
+        android:textColor="@color/black"
+        android:textSize="14.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.0dip"
+        android:gravity="right|center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/emotion_article_btn_see"
+            android:layout_width="15.0dip"
+            android:layout_height="10.0dip"
+            android:background="@drawable/see"
+            android:contentDescription="@string/say_hi" />
+
+        <TextView
+            android:id="@+id/emotion_article_tv_see"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="15.0dip"
+            android:gravity="center_vertical"
+            android:padding="2.0dip"
+            android:text="11 阅读"
+            android:textColor="@color/grey"
+            android:textSize="10.0sp" />
+
+        <ImageButton
+            android:id="@+id/emotion_article_btn_comment"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:background="@drawable/selector_btn_comment"
+            android:contentDescription="@string/say_hi" />
+
+        <TextView
+            android:id="@+id/emotion_article_tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="15.0dip"
+            android:gravity="center_vertical"
+            android:padding="2.0dip"
+            android:text="11"
+            android:textColor="@color/grey"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

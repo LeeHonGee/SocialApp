@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/activtiy_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个人中心"
+            android:textColor="@color/TitleTextColor"
+            android:textSize="17.0sp" />
+
+        <ImageButton
+            android:id="@id/title_back"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/ic_customer_servicer" />
+    </FrameLayout>
+    
+    <com.sharemob.tinchat.lib.refreashtabview.extras.PullLoadMoreRecyclerView
+        android:id="@+id/fragment_center_recyclerview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true" >
+
+            <com.sharemob.tinchat.component.RoundImageView
+                android:id="@+id/user_header_icon"
+                android:layout_width="55.0dip"
+                android:layout_height="55.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip" />
+
+            <LinearLayout
+                android:id="@+id/user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginRight="40.0dip"
+                android:orientation="vertical"
+                android:padding="6.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/user_sex_age"
+                        android:layout_width="35.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:drawableLeft="@drawable/ic_icon_female"
+                        android:gravity="center_horizontal"
+                        android:text="23"
+                        android:textColor="@color/white"
+                        android:textSize="12.0sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/user_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20.0dip"
+                        android:layout_marginTop="1.0dip"
+                        android:text="leehongee"
+                        android:textColor="@color/slategrey"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/user_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25.0dip"
+                        android:background="@drawable/panel_bg_place"
+                        android:gravity="center"
+                        android:text="深圳市"
+                        android:textColor="@color/white"
+                        android:textSize="3.0sp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/user_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20.0dip"
+                        android:drawableLeft="@drawable/ic_addr"
+                        android:gravity="center"
+                        android:text="深圳市宝安区碧涛居"
+                        android:textColor="@color/slategrey"
+                        android:textSize="11.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:gravity="center_vertical"
+            android:src="@drawable/icon_public_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

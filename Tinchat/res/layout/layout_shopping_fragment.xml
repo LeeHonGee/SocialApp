@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/activtiy_title_bg"
+        android:gravity="center"
+        android:text="商城"
+        android:textColor="@color/TitleTextColor"
+        android:textSize="18.0sp" />
+
+    <com.sharemob.tinchat.lib.refreashtabview.extras.PullLoadMoreRecyclerView
+        android:id="@+id/shopping_recyclerview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

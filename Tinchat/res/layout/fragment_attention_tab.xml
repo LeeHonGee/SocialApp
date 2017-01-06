@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <com.sharemob.tinchat.lib.refreashtabview.extras.PullLoadMoreRecyclerView
+        android:id="@+id/recyclerview_linkman"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/linkman_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="你可以关注你喜欢%s,添加为联系人"
+        android:textColor="@color/textgrey"
+        android:textSize="15.0sp"
+        android:visibility="gone" />
+
+</FrameLayout>

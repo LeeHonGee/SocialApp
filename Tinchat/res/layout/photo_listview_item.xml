@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100.0dip"
+    android:layout_height="100.0dip"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/id_iv_personal_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:background="@drawable/style_panel_bg"
+        android:drawableTop="@drawable/selector_btn_upload_photo"
+        android:gravity="center"
+        android:padding="15.0dip"
+        android:text="@string/upload_photo"
+        android:textColor="@color/actionsheet_gray" />
+
+</LinearLayout>

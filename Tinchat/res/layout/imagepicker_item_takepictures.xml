@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imagepicker_takepicture"
+    android:layout_width="wrap_content"
+    android:layout_height="150.0dip"
+    android:layout_marginBottom="1.0dip"
+    android:layout_marginRight="1.0dip"
+    android:background="@drawable/style_btn_takepictures"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/imagepicker_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="拍摄照片"
+        android:textColor="@color/whitesmoke"
+        android:textSize="13.0sp" />
+
+</LinearLayout>

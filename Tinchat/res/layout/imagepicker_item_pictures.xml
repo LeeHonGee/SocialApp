@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="150.0dip"
+    android:layout_marginBottom="1.0dip"
+    android:layout_marginRight="1.0dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imagepicker_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_photo" />
+
+    <CheckBox
+        android:id="@+id/imagepicker_item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right|center"
+        android:alpha="0.9"
+        android:background="@drawable/style_btn_check"
+        android:button="@null"
+        android:checked="false" />
+
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="180.0dip"
+        android:layout_height="40.0dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/style_progress_live_love"
+        android:gravity="right" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/style_btn_progress_live_love_inner" >
+
+            <ProgressBar
+                android:id="@+id/progress_live_love"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:max="500"
+                android:progress="0"
+                android:progressDrawable="@drawable/style_progress_live_love_inner"
+                android:secondaryProgress="0" />
+
+            <TextView
+                android:id="@+id/tv_progress_live_love_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="100℃"
+                android:textColor="@color/white"
+                android:textSize="16.0dip"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="43.0dip"
+        android:layout_height="43.0dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="right"
+        android:background="@drawable/style_progress_live_love_bg"
+        android:gravity="right" >
+
+        <ImageView
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_gravity="center"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/ic_user_homepage_praise_pressed" />
+    </LinearLayout>
+
+</FrameLayout>

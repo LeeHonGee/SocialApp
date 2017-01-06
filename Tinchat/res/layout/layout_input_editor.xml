@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/translucent_livecover_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/edittext_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right" >
+
+            <EditText
+                android:id="@+id/et_sendmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@color/translucence"
+                android:hint="说点什么呢..."
+                android:maxLines="3"
+                android:minHeight="40.0dip"
+                android:paddingLeft="10.0dip"
+                android:textSize="16.0sp"
+                android:windowSoftInputMode="stateUnchanged|adjustPan" />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/btn_reply_emoticon" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:background="@color/translucent_livecover_background"
+            android:onClick="onClick"
+            android:text="发送"
+            android:textColor="@color/whitesmoke"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_face_container"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.sharemob.tinchat.component.RoundImageView
+            android:id="@+id/fragment_center_userinfo_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fragment_center_userinfo_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10.0dip"
+                android:background="@color/transparent"
+                android:text="@string/fragment_center_userinfo_nicke"
+                android:textColor="@color/TitleTextColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fragment_center_userinfo_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5dp"
+                android:background="@color/transparent"
+                android:text="@string/fragment_center_userinfo_ID"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fragment_center_userinfo_sexAndage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/gender_girl"
+                android:gravity="right|center_vertical"
+                android:text="@string/fragment_center_userinfo_age"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/icon_public_arrow" />
+
+</FrameLayout>

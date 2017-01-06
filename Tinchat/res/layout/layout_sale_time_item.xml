@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/shopping_saletime_img"
+        android:layout_width="120.0dip"
+        android:layout_height="120.0dip"
+        android:layout_gravity="top|center"
+        android:layout_margin="5.0dip"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1.0dip" >
+
+        <TextView
+            android:id="@+id/shopping_saletime_costprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥99.00"
+            android:textColor="@color/grey"
+            android:textSize="9.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shopping_saletime_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥90.00"
+            android:textColor="@color/shopping_price"
+            android:textSize="14.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shopping_saletime_saveprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="立省9元"
+        android:textColor="@color/shopping_price"
+        android:textSize="12.0sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

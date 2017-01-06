@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/activtiy_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="裁切"
+            android:textColor="@android:color/white"
+            android:textSize="17.5sp"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/selector_btn_back" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff29292a" >
+
+        <com.sharemob.tinchat.base.CropImageView
+            android:id="@+id/iv_pre_crop_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/fl_btn_crop_photo" />
+
+        <FrameLayout
+            android:id="@id/fl_btn_crop_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/activtiy_title_bg"
+            android:padding="8.0dip" >
+
+            <Button
+                android:id="@+id/btn_crop_finish"
+                android:layout_width="160.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/style_btn_semicircle_green"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="20.0sp"
+                android:textStyle="normal" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

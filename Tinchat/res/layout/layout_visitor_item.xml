@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5.0dip" >
+
+        <ImageView
+            android:id="@+id/visitor_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7.0dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/user_info_up"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="fill_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/user_info_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:padding="2.0dip" >
+
+                    <TextView
+                        android:id="@+id/visitor_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:text="LeeHonGee"
+                        android:textColor="@color/black"
+                        android:textSize="15.0sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/visitor_sex_age"
+                        android:layout_width="32.0dip"
+                        android:layout_height="14.0dip"
+                        android:layout_margin="2.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/gender_girl"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2.0dip"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="2.0dip"
+                        android:text="26"
+                        android:textColor="@color/white"
+                        android:textSize="9.0sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/constellation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2.0dip"
+                        android:paddingLeft="2.0dip"
+                        android:paddingRight="2.0dip"
+                        android:paddingTop="2.0dip"
+                        android:text="射手座"
+                        android:textColor="@color/textgrey"
+                        android:textSize="11.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/visitor_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center_vertical"
+                    android:text="2月19日"
+                    android:textColor="@color/textgrey"
+                    android:textSize="14.0sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/visitor_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="3.0dip"
+                        android:paddingLeft="2.0dip"
+                        android:paddingTop="3.0dip"
+                        android:text="03:38 查看我的资料"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffc8c8c8" />
+
+</LinearLayout>

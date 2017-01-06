@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/activtiy_title_bg" >
+<!-- #d43c3c -->
+      <com.sharemob.tinchat.lib.viewpager.TitleIndicator
+            android:id="@+id/title"
+            android:layout_width="270.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="14.0dip" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dx_45"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" >
+            
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="0.1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/btn_add_dynamic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ic_topbar_edit_white"
+                android:visibility="gone"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:text="筛选"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginBottom="@dimen/chating_margin_top_bottom"
+    android:layout_marginRight="@dimen/chating_margin_left_right"
+    android:layout_marginTop="@dimen/chating_margin_top_bottom"
+    android:gravity="right" >
+
+    <ImageView
+        android:id="@+id/chating_avatar"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/chating_layout_video"
+        android:layout_width="150.0dip"
+        android:layout_height="40.0dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="5.0dip"
+        android:layout_toLeftOf="@+id/chating_avatar"
+        android:background="@drawable/bubble_right" >
+
+        <ImageView
+            android:id="@+id/chating_btn_video"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_gravity="left|center"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/ic_nav_live_nromal" />
+
+        <TextView
+            android:id="@+id/chating_text_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10.0dip"
+            android:text="3&apos;&apos;"
+            android:textColor="@color/textgrey"
+            android:textSize="14.0sp" />
+    </FrameLayout>
+
+</RelativeLayout>

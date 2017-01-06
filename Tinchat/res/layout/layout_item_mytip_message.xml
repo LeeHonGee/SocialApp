@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_mytip_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal"
+        android:text="2月28日 晚上18:13"
+        android:textColor="@color/textgrey"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/style_bg_round_white"
+        android:orientation="vertical" >
+
+        <com.sharemob.tinchat.component.SelectableRoundedImageView
+            android:id="@+id/tv_mytip_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="200.0dip"
+            android:scaleType="centerCrop"
+            app:sriv_border_color="#ff008fea"
+            app:sriv_border_width="0.0dip"
+            app:sriv_left_bottom_corner_radius="0.0dip"
+            app:sriv_left_top_corner_radius="10.0dip"
+            app:sriv_right_bottom_corner_radius="0.0dip"
+            app:sriv_right_top_corner_radius="10.0dip" />
+
+        <TextView
+            android:id="@+id/tv_mytip_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="钱多活少离家近,明天就有信不信?"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_mytip_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="钱多活少离家近,明天就有信不信?"
+            android:textColor="@color/gray"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="#ffcbcbcb" />
+
+        <TextView
+            android:id="@+id/tv_mytip_bottom_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="点击查看详情"
+            android:textColor="@color/gray"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

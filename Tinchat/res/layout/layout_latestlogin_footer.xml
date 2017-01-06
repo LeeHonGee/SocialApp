@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:layout_marginTop="50.0dip"
+    android:layout_weight="10.0"
+    android:orientation="horizontal"
+    android:paddingLeft="30.0dip"
+    android:paddingRight="30.0dip"
+    android:paddingTop="20.0dip" >
+
+    <ImageView
+        android:layout_width="50.0dip"
+        android:layout_height="10.0dip"
+        android:layout_gravity="center"
+        android:layout_weight="10.0"
+        android:background="@drawable/style_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="10.0"
+        android:gravity="center"
+        android:text="显示最近十次登录记录"
+        android:textColor="@color/black"
+        android:textSize="13.0sp" />
+
+    <ImageView
+        android:layout_width="50.0dip"
+        android:layout_height="10.0dip"
+        android:layout_gravity="center"
+        android:layout_weight="10.0"
+        android:background="@drawable/style_line" />
+
+</LinearLayout>

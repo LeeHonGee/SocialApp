@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_card_slide"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_like_match_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/transparent" >
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(0/26)心动"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/card_feeling_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10.0dip"
+            android:drawableLeft="@drawable/ic_contact_fans"
+            android:paddingRight="5.0dip"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="35.0dip" >
+
+        <com.sharemob.tinchat.modules.feeling.CardSlidePanel
+            android:id="@+id/image_slide_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.sharemob.tinchat.modules.feeling.CardItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical" />
+
+            <com.sharemob.tinchat.modules.feeling.CardItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <com.sharemob.tinchat.modules.feeling.CardItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <com.sharemob.tinchat.modules.feeling.CardItemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </com.sharemob.tinchat.modules.feeling.CardSlidePanel>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30.0dip" >
+
+        <include layout="@layout/layout_cardslide" />
+    </FrameLayout>
+
+</RelativeLayout>

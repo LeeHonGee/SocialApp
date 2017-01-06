@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawable_array">
+        <item>@drawable/selector_menuitem_video</item>
+        <item>@drawable/selector_menuitem_audio</item>
+        <item>@drawable/selector_menuitem_photo</item>
+    </array>
+</resources>

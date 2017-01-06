@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/comment_avatar"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_margin="5.0dip"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:orientation="vertical"
+            android:padding="5.0dip" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/comment_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:text="李航杰"
+                        android:textColor="@android:color/black"
+                        android:textSize="14.0sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/comment_sex_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/gender_boy"
+                        android:gravity="right|center"
+                        android:paddingBottom="2.0dip"
+                        android:paddingLeft="16.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="2.0dip"
+                        android:text="22"
+                        android:textColor="@color/white"
+                        android:textSize="9.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:text="2016-05-01 23:27"
+                    android:textColor="@color/textgrey"
+                    android:textSize="13.0sp"
+                    android:textStyle="normal" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10.0dip"
+                android:singleLine="false"
+                android:text="为了长期在公众面前保持姣好的面容和傲人身材，一些名人明星对肉毒杆菌注射除皱、硅胶隆胸等整容整形方式趋之若鹜。不过，欧美演艺圈眼下刮起自然风，越来越多艺人决定告别人造美。英国整形专家本吉·迪隆说，人们开始抛弃大量肉毒杆菌注射造成的僵硬面容或过度填充出的面颊和嘴唇"
+                android:textColor="@color/textgrey"
+                android:textSize="13.0sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffc8c8c8" />
+
+</LinearLayout>

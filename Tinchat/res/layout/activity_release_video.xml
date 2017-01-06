@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/release_bg_black"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/activtiy_title_bg" >
+
+        <Button
+            android:id="@id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/selector_btn_back"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="录像"
+            android:textColor="@android:color/white"
+            android:textSize="17.5sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/title_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="#00000000"
+            android:text="发送"
+            android:textColor="@android:color/white"
+            android:textSize="17.5sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal" >
+
+        <com.sharemob.tinchat.base.LocalVideoView
+            android:id="@+id/iv_release_video"
+            android:layout_width="120.0dip"
+            android:layout_height="120.0dip"
+            android:orientation="horizontal"
+            android:src="@color/default_color" />
+
+        <EditText
+            android:id="@+id/et_release_text"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="fill_horizontal|top|center"
+            android:hint="这一刻想说点什么呢～"
+            android:maxEms="10"
+            android:maxLength="100"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="5.0dip"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/textgrey"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_location_map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6.0dip"
+        android:drawableLeft="@drawable/city_location"
+        android:text="定位中..."
+        android:textColor="@color/textgrey"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

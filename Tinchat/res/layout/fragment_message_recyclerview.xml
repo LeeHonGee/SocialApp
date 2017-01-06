@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.sharemob.tinchat.base.LocalHoveringScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <com.sharemob.tinchat.lib.refreashtabview.refreash.PullToRefreshListView
+            android:id="@+id/listview_mytip_message"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/whitesmoke"
+            android:cacheColorHint="@null"
+            android:divider="#ffcbcbcb"
+            android:dividerHeight="0.0px"
+            android:duplicateParentState="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="@drawable/selector_mytip_item"
+            android:scrollbars="none"
+           />
+    </com.sharemob.tinchat.base.LocalHoveringScrollView>
+<!--  ptr:ptrAnimationStyle="rotate"
+            ptr:ptrHeaderBackground="#fff3f3f6"
+            ptr:ptrHeaderTextColor="#ffc9c9c9"  -->
+</LinearLayout>

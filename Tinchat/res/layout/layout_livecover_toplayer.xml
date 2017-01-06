@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:layout_gravity="top"
+        android:background="@color/translucent_livecover_background"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@color/trans" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/btn_black_cl"
+                android:drawableLeft="@drawable/color_dark_04"
+                android:gravity="center"
+                android:text="就绪..."
+                android:textColor="@android:color/black"
+                android:textSize="13.0sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/iBtn_cover_change_camera"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="50.0dip"
+                android:background="@drawable/stream_cameratoggle" />
+
+            <ImageButton
+                android:id="@+id/title_back"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/ic_clear_disabled" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:text="拍好一张封面照更容易获得观众"
+            android:textColor="#ff78787d"
+            android:textSize="15.0sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_crop_livecover"
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:background="@color/trans" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/translucent_livecover_background" >
+
+        <Button
+            android:id="@+id/btn_live_cover"
+            android:layout_width="120.0dip"
+            android:layout_height="120.0dip"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="70.0dip"
+            android:background="@drawable/background_bg_special_disease_circle"
+            android:text="拍封面"
+            android:textColor="@color/white"
+            android:textSize="22.0sp"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_feeling_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10.0dip"
+    android:background="@drawable/style_cardslide_panel_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2.0dip" >
+
+            <ImageView
+                android:id="@+id/card_image_view"
+                android:layout_width="240.0dip"
+                android:layout_height="240.0dip"
+                android:src="@drawable/avatar_normal" />
+
+            <LinearLayout
+                android:id="@+id/layout_small_images"
+                android:layout_width="match_parent"
+                android:layout_height="240.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/card_image_view"
+                android:layout_weight="10.0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/avatar_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="66.0dip"
+                    android:layout_weight="1.0"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_normal" />
+
+                <ImageView
+                    android:id="@+id/avatar_02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="66.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/avatar_normal" />
+
+                <ImageView
+                    android:id="@+id/avatar_03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="66.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/avatar_normal" />
+                
+                <ImageView
+                    android:id="@+id/avatar_04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="66.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/avatar_normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/card_pic_num"
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_margin="15.0dip"
+            android:background="#5f000000"
+            android:drawableLeft="@drawable/card_photot"
+            android:drawablePadding="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="4.0dip"
+            android:text="0"
+            android:textColor="@color/whitesmoke" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.00999999dip"
+        android:layout_marginTop="10.0dip"
+        android:background="#5f000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:paddingTop="10.0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/card_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="名字"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_feeling_sex_age"
+                        android:layout_width="35.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:gravity="right|center"
+                        android:paddingLeft="8.0dip"
+                        android:paddingRight="8.0dip"
+                        android:paddingTop="1.0dip"
+                        android:textColor="@color/white"
+                        android:textSize="10.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_reg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:gravity="right|center"
+                    android:paddingLeft="7.0dip"
+                    android:paddingRight="7.0dip"
+                    android:text="注册日期:xxxx-xx-xx"
+                    android:textColor="@color/regTime"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_feeling_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人签名"
+                    android:textColor="@color/textgrey"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:id="@+id/btn_signature_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="left|center"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_feeling_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="8.0dip"
+                android:drawableLeft="@drawable/ic_chat_loc_normal"
+                android:gravity="left|center"
+                android:text="地理定义..."
+                android:textColor="@color/textgrey"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/card_left1"
+                android:drawablePadding="2.0dip"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff999999"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/card_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:drawableLeft="@drawable/card_left2"
+                android:drawablePadding="2.0dip"
+                android:gravity="center_horizontal"
+                android:text="2"
+                android:textColor="#ff999999"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

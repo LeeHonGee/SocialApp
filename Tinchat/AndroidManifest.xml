@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sharemob.tinchat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+    <!-- 高德地图开启权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <!-- Share SDK 短信验证码 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <permission android:name ="wx.permission.auth.LOGIN" />
+    <!-- 摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA"/>    
+    <uses-feature android:name="android.hardware.camera.front" android:required="true" />
+	<uses-feature android:name = "android.hardware.camera" />
+	<uses-feature android:name = "android.hardware.camera.autofocus" /> 
+	
+	<uses-permission android:name="android.permission.RECORD_VIDEO"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    
+    <application
+        android:exported="true"
+        android:allowBackup="true"
+        android:largeHeap="true" 
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".lib.MyApplication"
+        android:theme="@style/AppTheme" >
+        <activity
+    		android:name="com.mob.tools.MobUIShell"
+    		android:configChanges="keyboardHidden|orientation|screenSize"
+    		android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    		android:windowSoftInputMode="stateHidden|adjustResize" />
+
+          <activity  android:name=".modules.search.SearchActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.launch.MainActivity"  android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.launch.LuaActivity"  android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.account.BindingPhoneActivity"  android:theme="@android:style/Theme.NoTitleBar"/>
+          
+          <activity  android:name=".modules.discover.NearbyActivity"  android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.camera.CropPhotoActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.camera.ReleasePhotoActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.camera.ReleaseVideoActivity"  android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.camera.LiveActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.camera.LiveCoverActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity  android:name=".modules.camera.VideoActivity" android:theme="@android:style/Theme.NoTitleBar" />
+          <activity  android:name=".modules.camera.ReadyLiveActivity" android:theme="@android:style/Theme.NoTitleBar" />
+          
+          <activity  android:name=".lib.photoview.ImagePagerActivity" android:theme="@android:style/Theme.NoTitleBar" />
+          <activity android:name=".modules.message.MessageActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity android:name=".modules.home.MygiftsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity android:name=".modules.verification.VerificationMainActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity android:name=".modules.verification.CreditManagerActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity android:name=".modules.verification.PromoteCreditActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity android:name=".modules.shopping.GoodsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+          
+          <activity android:name=".modules.home.LinkmanActivity" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+          <activity android:name=".modules.home.MessageActivity" 
+              android:launchMode="singleTop"
+              android:theme="@android:style/Theme.NoTitleBar"/>
+          <activity android:name=".component.AppActivity" 
+               android:largeHeap="true"
+               android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+               android:theme="@android:style/Theme.NoTitleBar"/>
+		  <activity
+	            android:name=".wxapi.WXEntryActivityy"
+	            android:exported="true"
+	            android:label="@string/app_name"
+	            android:launchMode="singleTop" >
+	            <intent-filter>
+	                <action android:name="android.intent.action.VIEW" />
+	
+	                <category android:name="android.intent.category.DEFAULT" />
+	            </intent-filter>
+	        </activity>
+
+        <activity
+   			android:name="com.sharemob.tinchat.modules.launch.SplashActivity"
+   			android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 微信授权登录 -->
+         <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@style/Transparent"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+        <!-- 高德地图定位密钥 -->
+          <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="648e48c0298eef22c7f97cb835775704" />
+          <meta-data
+            android:name="TINCHAT_LAUNCH_ACTIVITY"
+            android:value="com.sharemob.tinchat.modules.launch.MainActivity"/>
+          
+    </application>
+
+</manifest>

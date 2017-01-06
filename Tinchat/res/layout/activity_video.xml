@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/activtiy_title_bg" >
+
+        <SurfaceView
+            android:id="@+id/surfaceview_video"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/fl_btn_crop_photo" />
+
+        <ProgressBar
+            android:id="@+id/progress_video_time"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:layout_above="@+id/fl_btn_crop_photo"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar"
+            android:secondaryProgress="0" />
+
+        <FrameLayout
+            android:id="@+id/fl_btn_crop_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/translucent_background"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:id="@+id/tv_video_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20.0dip"
+                android:text="10秒"
+                android:textColor="@color/white"
+                android:textSize="25.0sp" />
+
+            <ImageButton
+                android:id="@+id/iBtn_camera_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/stream_cameratoggle"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_video_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_bg_special_disease_circle"
+                android:textColor="@color/white"
+                android:textSize="20.0sp"
+                android:textStyle="normal" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

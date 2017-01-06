@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_share_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#00000000"
+    android:gravity="bottom|center" >
+
+    <com.sharemob.tinchat.component.BrandTextView
+        android:id="@+id/more_window_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30.0dip"
+        android:clickable="true"
+        android:drawablePadding="5.0dip"
+        android:drawableTop="@drawable/selector_btn_wechat_circle"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:paddingTop="0.0dip"
+        android:text="朋友圈"
+        android:textSize="14.0sp" />
+
+    <com.sharemob.tinchat.component.BrandTextView
+        android:id="@+id/more_window_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30.0dip"
+        android:layout_toRightOf="@+id/more_window_local"
+        android:clickable="true"
+        android:drawablePadding="5.0dip"
+        android:drawableTop="@drawable/selector_btn_wechat_friend"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:text="好友"
+        android:textSize="14.0sp" />
+
+    <com.sharemob.tinchat.component.BrandTextView
+        android:id="@+id/more_window_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/more_window_online"
+        android:clickable="true"
+        android:drawablePadding="5.0dip"
+        android:drawableTop="@drawable/selector_btn_qq_space"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:text="qq空间"
+        android:textSize="14.0sp" />
+
+    <com.sharemob.tinchat.component.BrandTextView
+        android:id="@+id/more_window_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_local"
+        android:layout_marginRight="30.0dip"
+        android:clickable="true"
+        android:drawablePadding="5.0dip"
+        android:drawableTop="@drawable/selector_btn_give_gift"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:text="qq好友"
+        android:textSize="14.0sp" />
+
+    <com.sharemob.tinchat.component.BrandTextView
+        android:id="@+id/more_window_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_online"
+        android:layout_marginRight="30.0dip"
+        android:layout_toRightOf="@+id/more_window_collect"
+        android:clickable="true"
+        android:drawablePadding="5.0dip"
+        android:drawableTop="@drawable/selector_btn_weibo"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:text="新浪微博"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:id="@+id/center_music_window_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_auto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78.0dip"
+        android:layout_toRightOf="@+id/more_window_collect"
+        android:drawablePadding="5.0dip"
+        android:src="@drawable/tabbar_compose_background_icon_close" />
+
+</RelativeLayout>

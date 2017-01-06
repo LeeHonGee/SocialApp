@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="80.0dip"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <com.sharemob.tinchat.component.BannerSlideView
+        android:id="@+id/shopping_goods_photos"
+        android:layout_width="fill_parent"
+        android:layout_height="300.0dip" />
+
+    <TextView
+        android:id="@+id/shopping_goods_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center"
+        android:padding="10.0dip"
+        android:text="@string/shopping_item_title"
+        android:textColor="@color/TitleTextColor"
+        android:textSize="18.0sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/shopping_goods_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="left|center"
+        android:padding="10.0dip"
+        android:text="@string/shopping_item_subtitle"
+        android:textColor="@color/activtiy_title_bg"
+        android:textSize="15.0sp"
+        android:textStyle="normal" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10.0dip" >
+
+            <TextView
+                android:id="@+id/shopping_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:gravity="left|center"
+                android:text="￥29.00"
+                android:textColor="@color/red"
+                android:textSize="15.0sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/shopping_goods_marketprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="市场价:￥29.00"
+                android:textColor="@color/grey"
+                android:textSize="12.0sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shopping_goods_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10.0dip"
+            android:text="月销: 1079"
+            android:textColor="@color/grey"
+            android:textSize="12.0sp"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:background="#ffe5e5e5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/check_symbol"
+            android:padding="3.0dip"
+            android:text="正品保证"
+            android:textColor="@color/black"
+            android:textSize="11.0sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/check_symbol"
+            android:padding="3.0dip"
+            android:text="货到付款"
+            android:textColor="@color/black"
+            android:textSize="11.0sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/check_symbol"
+            android:padding="3.0dip"
+            android:text="七天包退"
+            android:textColor="@color/black"
+            android:textSize="11.0sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/check_symbol"
+            android:padding="3.0dip"
+            android:text="隐私包装"
+            android:textColor="@color/black"
+            android:textSize="11.0sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10.0dip"
+            android:text="商品评价(257人)"
+            android:textColor="@color/gray"
+            android:textSize="13.0sp"
+            android:textStyle="normal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopping_goods_comments"
+            android:layout_width="fill_parent"
+            android:layout_height="200.0dip"
+            android:listSelector="@drawable/selector_list_item"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.30000007dip"
+            android:background="#ffe5e5e5" />
+
+        <TextView
+            android:id="@+id/shopping_goods_more_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:gravity="center"
+            android:text="查看更多评论"
+            android:textColor="@color/gray"
+            android:textSize="12.0sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="10.0dip"
+            android:text="自由搭配"
+            android:textColor="@color/black"
+            android:textSize="13.0sp"
+            android:textStyle="normal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopping_goods_personalmatchs"
+            android:layout_width="fill_parent"
+            android:layout_height="185.0dip"
+            android:listSelector="@drawable/selector_list_item"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:padding="10.0dip"
+        android:text="图文详情"
+        android:textColor="@color/gray"
+        android:textSize="13.0sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.30000007dip"
+        android:background="#ffe5e5e5" />
+
+    <WebView
+        android:id="@+id/shopping_item_wb_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

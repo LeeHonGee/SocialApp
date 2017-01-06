@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_framementCenter_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/activtiy_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个人中心"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_account_info"
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:background="@drawable/style_panel_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5.0dip" >
+
+            <com.sharemob.tinchat.base.CircleImageView
+                android:id="@+id/account_header"
+                android:layout_width="80.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/public_default_head" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="40.0dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/account_info_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="李韩桀"
+                    android:textColor="@color/slategrey"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/account_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:text="ID: 00001"
+                    android:textColor="@color/slategrey"
+                    android:textSize="16.0sp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/account_info_sex_age"
+                        android:layout_width="35.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/style_bg_sex_male"
+                        android:drawableLeft="@drawable/ic_icon_female"
+                        android:gravity="center_horizontal"
+                        android:padding="1.0dip"
+                        android:text="23"
+                        android:textColor="@color/white"
+                        android:textSize="10.0sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/account_info_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/style_bg_city"
+                        android:gravity="center"
+                        android:text="深圳市"
+                        android:textColor="@color/white"
+                        android:textSize="10.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:gravity="center_vertical"
+            android:src="@drawable/icon_public_arrow" />
+    </RelativeLayout>
+
+    <com.sharemob.tinchat.base.NoScrollListview
+        android:id="@+id/listView_account_space"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/style_panel_bg"
+        android:divider="#ffcbcbcb"
+        android:dividerHeight="0.8000001px"
+        android:listSelector="@drawable/selector_list_item"
+        android:scrollbarSize="0.0dip" />
+
+    <com.sharemob.tinchat.base.NoScrollListview
+        android:id="@+id/listView_account_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/style_panel_bg"
+        android:divider="#ffcbcbcb"
+        android:dividerHeight="0.30000007px"
+        android:listSelector="@drawable/selector_list_item"
+        android:scrollbarSize="0.0dip" />
+
+</LinearLayout>

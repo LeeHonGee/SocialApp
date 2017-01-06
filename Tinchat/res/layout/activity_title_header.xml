@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_title_header"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip"
+    android:layout_gravity="top"
+    android:background="@color/activtiy_title_bg" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_gravity="top"
+        android:background="@color/activtiy_title_bg" >
+
+        <TextView
+            android:id="@+id/tv_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="状态栏名称"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp" />
+
+        <ImageButton
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/selector_btn_back"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/title_right"
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/ic_title_more"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

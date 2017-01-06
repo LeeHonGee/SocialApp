@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginBottom="@dimen/chating_margin_top_bottom"
+    android:layout_marginLeft="@dimen/chating_margin_left_right"
+    android:layout_marginTop="@dimen/chating_margin_top_bottom"
+    android:gravity="left" >
+
+    <TextView
+        android:id="@+id/chating_tv_sendtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10.0dip"
+        android:background="@color/transparent"
+        android:text="@string/receive_time"
+        android:textColor="@color/textgrey"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/chating_avatar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/chating_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="50.0dip"
+        android:layout_toRightOf="@+id/chating_avatar"
+        android:background="@drawable/bg_contact_friend"
+        android:lineSpacingExtra="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="7.0dip"
+        android:paddingTop="4.0dip"
+        android:textColor="@color/textgrey"
+        android:textSize="14.0sp" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/main_tab_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_tabhost_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_tab_dynamic"
+            style="@style/btn_tabhost"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/btn_tabhost_location"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/main_tab_feeling"
+            style="@style/btn_tabhost"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/btn_tabhost_feeling"
+            android:text="好感" />
+
+        <RadioButton
+            android:id="@+id/main_tab_chatroom"
+            style="@style/btn_tabhost"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/btn_tabhost_shoppingcart"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/main_tab_shopping"
+            style="@style/btn_tabhost"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/btn_tabhost_shopping"
+            android:text="商城" />
+
+        <RadioButton
+            android:id="@+id/main_tab_center"
+            style="@style/btn_tabhost"
+            android:layout_weight="1.0"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_tabhost_center"
+            android:text="个人" />
+    </RadioGroup>
+
+</LinearLayout>

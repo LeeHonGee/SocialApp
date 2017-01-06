@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/style_bg_round_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ly_myinfo_changeaddress_child"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_selector"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_share_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="故乡"
+            android:textColor="@color/black"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.100000024dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/alertdialog_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.sharemob.tinchat.component.wheeldialog.WheelView
+                android:id="@+id/wv_address_province"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0" />
+
+            <com.sharemob.tinchat.component.wheeldialog.WheelView
+                android:id="@+id/wv_address_city"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0" />
+
+            <com.sharemob.tinchat.component.wheeldialog.WheelView
+                android:id="@+id/wv_address_area"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.100000024dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/alertdialog_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_neg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/alertdialog_left_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/actionsheet_gray"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/img_line"
+                android:layout_width="0.100000024dip"
+                android:layout_height="fill_parent"
+                android:background="@color/alertdialog_line" />
+
+            <Button
+                android:id="@+id/btn_pos"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/alertdialog_right_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="16.0sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

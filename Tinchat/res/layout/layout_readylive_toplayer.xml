@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slideswitch="http://schemas.android.com/apk/res/com.sharemob.tinchat"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_livecover_title"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:layout_gravity="top"
+        android:background="@color/translucent_livecover_background"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5.0dip"
+                android:background="@drawable/selector_btn_back" />
+
+            <TextView
+                android:id="@+id/iBtn_change_camera_facing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right|center"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:drawableLeft="@drawable/cashier_camera"
+                android:drawablePadding="6.0dip"
+                android:gravity="center_vertical"
+                android:text="重拍"
+                android:textColor="@color/white"
+                android:textSize="17.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip"
+        android:background="@color/trans" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/translucent_livecover_background" >
+
+        <com.sharemob.tinchat.base.CircleImageView
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_gravity="top"
+            android:layout_margin="15.0dip"
+            app:border_color="@color/white"
+            app:border_width="1.0dip" />
+
+        <EditText
+            android:id="@+id/et_live_titile"
+            android:layout_width="220.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="top"
+            android:layout_marginLeft="80.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/style_live_title_panel_bg"
+            android:gravity="center_vertical"
+            android:hint="\#写一个好标题可以获得更多观众#"
+            android:padding="6.0dip"
+            android:paddingLeft="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="13.0dip" />
+
+        <LinearLayout
+            android:id="@+id/layout_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10.0dip" >
+
+            <TextView
+                android:id="@+id/tv_live_location_address"
+                android:layout_width="wrap_content"
+                android:layout_height="20.0dip"
+                android:layout_marginRight="30.0dip"
+                android:drawableLeft="@drawable/travel__icon_scene_location"
+                android:drawablePadding="6.0dip"
+                android:gravity="fill_horizontal|center"
+                android:text="广东省深圳市宝安区勤诚达"
+                android:textColor="@color/white"
+                android:textSize="15.0dip" />
+
+            <com.sharemob.tinchat.component.SlideSwitch
+                android:id="@+id/btn_change_location"
+                android:layout_width="50.0dip"
+                android:layout_height="25.0dip"
+            />
+         <!--        slideswitch:isOpen="true"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="#ffff8733"  -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_start_live"
+            android:layout_width="180.0dip"
+            android:layout_height="43.0dip"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/style_btn_semicircle_red"
+            android:text="开始直播"
+            android:textColor="@color/white"
+            android:textSize="17.0sp"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+</LinearLayout>

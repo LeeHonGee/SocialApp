@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <ImageView
+        android:id="@+id/shopping_icon"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/shopping_icon_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:gravity="center"
+        android:text="安全避孕"
+        android:textColor="@color/TitleTextColor"
+        android:textSize="12.0sp" />
+
+</LinearLayout>

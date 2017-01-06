@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170.0dip"
+    android:layout_height="200.0dip"
+    android:background="@drawable/catloading_background" >
+
+    <ImageView
+        android:id="@+id/mouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mouse" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cat" />
+
+        <ImageView
+            android:id="@+id/eye_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.5dip"
+            android:layout_marginTop="5.5dip"
+            android:src="@drawable/eyes" />
+
+        <com.sharemob.tinchat.lib.catloading.EyelidView
+            android:id="@+id/eyelid_left"
+            android:layout_width="14.0dip"
+            android:layout_height="15.0dip"
+            android:layout_marginLeft="2.5dip"
+            android:layout_marginTop="5.5dip"
+            android:src="@drawable/eyes" />
+
+        <ImageView
+            android:id="@+id/eye_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="5.5dip"
+            android:src="@drawable/eyes" />
+
+        <com.sharemob.tinchat.lib.catloading.EyelidView
+            android:id="@+id/eyelid_right"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="5.5dip"
+            android:src="@drawable/eyes" />
+    </RelativeLayout>
+
+    <com.sharemob.tinchat.lib.catloading.GraduallyTextView
+        android:id="@+id/graduallyTextView"
+        android:layout_width="110.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10.0dip"
+        android:background="@color/transparent"
+        android:text="L O A D I N G ..."
+        android:textColor="#ffffffff"
+        android:textSize="15.0sp" />
+
+</RelativeLayout>

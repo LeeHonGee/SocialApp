@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/chating_margin_top_bottom"
+    android:layout_marginRight="@dimen/chating_margin_left_right"
+    android:layout_marginTop="@dimen/chating_margin_top_bottom"
+    android:gravity="right" >
+
+    <ImageView
+        android:id="@+id/chating_avatar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/chating_layout_location"
+        android:layout_width="230.0dip"
+        android:layout_height="150.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_toLeftOf="@+id/chating_avatar"
+        android:background="@drawable/style_bg_round" >
+
+        <ImageView
+            android:id="@+id/chating_mv_location"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_gravity="bottom"
+            android:alpha="0.8"
+            android:background="@drawable/style_bg_bottom_round" >
+
+            <TextView
+                android:id="@+id/chating_tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:paddingLeft="5.0dip"
+                android:singleLine="true"
+                android:text="@string/chating_location"
+                android:textColor="@color/whitesmoke"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

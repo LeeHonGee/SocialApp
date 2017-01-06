@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="65.0dip"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5.0dip" >
+
+    <com.sharemob.tinchat.component.RoundImageView
+        android:id="@+id/message_iv_header"
+        android:layout_width="55.0dip"
+        android:layout_height="55.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="0.0dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/empty_photo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_info_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:orientation="horizontal"
+            android:padding="2.0dip" >
+
+            <LinearLayout
+                android:id="@+id/user_info_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:padding="2.0dip" >
+
+                <TextView
+                    android:id="@+id/message_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:text="LeeHonGee"
+                    android:textColor="@color/black"
+                    android:textSize="15.0sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/message_tv_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/style_bg_sex_female"
+                    android:drawableLeft="@drawable/ic_icon_female"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="2.0dip"
+                    android:text="26"
+                    android:textColor="@color/white"
+                    android:textSize="11.0sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="下午 2:13"
+                android:textColor="@color/slategrey"
+                android:textSize="13.0sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal"
+                android:padding="2.0dip" >
+
+                <TextView
+                    android:id="@+id/message_tv_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:text="广东深圳宝安区,身材丰满,167厘米"
+                    android:textColor="@color/slategrey"
+                    android:textSize="12.0sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message_tv_num"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/panel_bg_messagenum"
+                android:gravity="center"
+                android:text="101"
+                android:textColor="@color/white"
+                android:textSize="12.0sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

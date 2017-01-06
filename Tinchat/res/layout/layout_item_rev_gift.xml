@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="0.0dip" >
+
+        <com.sharemob.tinchat.component.RoundImageView
+            android:id="@+id/rev_gift_avatar"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_normal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    android:id="@+id/rev_gift_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.0dip"
+                    android:text="Danniel"
+                    android:textColor="@color/black"
+                    android:textSize="19.0sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/rev_gift_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_toRightOf="@+id/gift_tv_username"
+                    android:paddingLeft="15.0dip"
+                    android:text="赠送的礼物"
+                    android:textColor="@color/black"
+                    android:textSize="19.0sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/rev_gift_icon"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:paddingLeft="25.0dip" >
+
+                    <TextView
+                        android:id="@+id/rev_gift_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="礼物:玫瑰之约"
+                        android:textColor="@color/black"
+                        android:textSize="13.0sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/rev_gift_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/gift_tv_username"
+                        android:background="@drawable/style_attention_border"
+                        android:paddingTop="5.0dip"
+                        android:text="时间:5月08日 11:34"
+                        android:textColor="@color/black"
+                        android:textSize="13.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffc8c8c8" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_tabhost_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/layout_tabhost" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_tabhost_id"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fragement_dynamic"
+            android:name="com.sharemob.tinchat.modules.home.FragmentNearby"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10.0" />
+
+        <fragment
+            android:id="@+id/fragement_feeling"
+            android:name="com.sharemob.tinchat.modules.feeling.CardFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10.0" />
+
+        <fragment
+            android:id="@+id/fragement_chatroom"
+            android:name="com.sharemob.tinchat.modules.home.FragmentMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10.0" />
+
+        <fragment
+            android:id="@+id/fragement_shopping"
+            android:name="com.sharemob.tinchat.modules.home.ShoppingFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10.0" />
+
+        <fragment
+            android:id="@+id/fragement_center"
+            android:name="com.sharemob.tinchat.modules.home.FragmentCenter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10.0" />
+    </LinearLayout>
+
+</RelativeLayout>

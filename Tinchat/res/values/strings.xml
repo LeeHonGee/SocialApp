@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">性福蜜桃</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="personal_presentation">在xx,我希望找到一个真诚,自信,积极,阳光的另一半,相扶相持,一起生活</string>
+    <string name="photo_description">个人照片</string>
+    <string name="upload_photo">上传照片</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="attention_text">已关注</string>
+    <string name="red_dot">红点</string>
+    <string name="chating_btn_accept">同意</string>
+    <string name="chating_btn_inject">拒绝</string>
+    <string name="chating_location">正在搜索定位中...</string>
+    <string name="page_tab1">主页</string>
+    <string name="page_tab2">说说</string>
+    <string name="page_tab3">相册</string>
+    <string name="page_tab4">礼品</string>
+    <string name="page_tab5">最近访问</string>
+    <string name="receive_time">2013-10-08 16:05:36</string>
+    <string name="left_chat_content">关爱是什么软件啊？有那么好用吗？</string>
+    <string name="head_title_desc">该demo包含上滑悬浮头部，同时上下拉可刷新数据，可以左右滑动切换tab</string>
+    <string name="empty" />
+    <string name="say_hi">打个招呼</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_load_more_label">正在加载...</string>
+    <string name="shopping_item_title">冈本 激薄/纯/酷玩27只组合安全套 性价比之选</string>
+    <string name="shopping_item_subtitle">【新学期购尚牌】1、尚牌全系满99减20；</string>
+    
+    <string name="goods_item_tabinfo_goods">商品</string>
+    <string name="goods_item_tabinfo_details">详情</string>
+    <string name="goods_item_tabinfo_comments">评价</string>
+    
+    <string name="nearby_item_tabinfo_news">动态</string>
+    <string name="nearby_item_tabinfo_users">附近</string>
+    <string name="nearby_item_tabinfo_magazine">谈情</string>
+    
+    <string name="fragment_center_userinfo_nicke">霓虹胖次</string>
+    <string name="fragment_center_userinfo_ID">ID:00006</string>
+    <string name="fragment_center_userinfo_age">26</string>
+    <string name="fragment_center_item_name">我的动态</string>
+</resources>

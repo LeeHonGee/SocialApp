@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/dx_8"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/dynamic_iv_header"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_margin="5.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avatar_normal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="26.0dip"
+                        android:layout_gravity="left|center"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/dynamic_tv_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title"
+                            android:text="杨宣梓"
+                            android:textColor="@color/black"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/dynamic_user_sex_age"
+                            android:layout_width="30.0dip"
+                            android:layout_height="14.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:background="@drawable/gender_boy"
+                            android:gravity="right|center"
+                            android:paddingRight="5.0dip"
+                            android:textColor="@color/white"
+                            android:textSize="9.0sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dynamic_btn_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right|center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="25.0dip"
+                        android:paddingRight="15.0dip"
+                        android:paddingTop="5.0dip" >
+
+                        <com.sharemob.tinchat.component.LocalButton
+                            android:id="@+id/dynamic_btn_attention"
+                            android:layout_width="55.0dip"
+                            android:layout_height="24.0dip"
+                            android:background="#ffffe762"
+                            android:text="关注"
+                            android:textColor="@color/black"
+                            android:textSize="10.0sp"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_btn_more"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/dynamic_tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:drawableLeft="@drawable/ic_chat_loc_normal"
+                    android:gravity="center_vertical"
+                    android:text="深圳市宝安区20区勤诚达"
+                    android:textColor="@color/grey"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="5.0dip" >
+
+            <TextView
+                android:id="@+id/dynamic_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="只有心存美好的人,才会区欣赏别人。"
+                android:textColor="@color/textgrey"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/dynamic_iv"
+                android:layout_width="250.0dip"
+                android:layout_height="250.0dip"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <com.sharemob.tinchat.lib.photoview.NoScrollGridView
+                android:id="@+id/dynamic_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2.0dip"
+                android:columnWidth="120.0dip"
+                android:gravity="center"
+                android:horizontalSpacing="2.0dip"
+                android:listSelector="@drawable/selector_list_item"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2.0dip" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:padding="5.0dip" >
+
+            <TextView
+                android:id="@+id/dynamic_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5.0dip"
+                android:drawableLeft="@drawable/ic_order_list_repay"
+                android:paddingRight="10.0dip"
+                android:text="19分钟"
+                android:textColor="@color/grey"
+                android:textSize="10.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/dynamic_btn_see"
+                        android:layout_width="15.0dip"
+                        android:layout_height="10.0dip"
+                        android:background="@drawable/see"
+                        android:contentDescription="@string/say_hi" />
+
+                    <TextView
+                        android:id="@+id/dynamic_tv_see"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="15.0dip"
+                        android:gravity="center_vertical"
+                        android:padding="2.0dip"
+                        android:text="11 ●阅读"
+                        android:textColor="@color/grey"
+                        android:textSize="10.0sp" />
+
+                    <ImageButton
+                        android:id="@+id/dynamic_btn_comment"
+                        android:layout_width="15.0dip"
+                        android:layout_height="15.0dip"
+                        android:background="@drawable/selector_btn_comment"
+                        android:contentDescription="@string/say_hi" />
+
+                    <TextView
+                        android:id="@+id/dynamic_tv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="15.0dip"
+                        android:gravity="center_vertical"
+                        android:padding="2.0dip"
+                        android:text="11"
+                        android:textColor="@color/grey"
+                        android:textSize="10.0sp" />
+
+                    <ImageButton
+                        android:id="@+id/dynamic_btn_dianzan"
+                        android:layout_width="15.0dip"
+                        android:layout_height="15.0dip"
+                        android:background="@drawable/ic_feed_like_gray"
+                        android:contentDescription="@string/say_hi"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/dynamic_tv_dianzan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:padding="2.0dip"
+                        android:text="10"
+                        android:textColor="@color/grey"
+                        android:textSize="10.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.20000005dip"
+            android:background="#ffc8c8c8" />
+    </LinearLayout>
+
+</LinearLayout>

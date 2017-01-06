@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dip"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_listview_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="fill_horizontal|center"
+        android:layout_margin="15.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_buy_member_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="1个月"
+            android:textColor="@color/slategrey"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:layout_width="0.100000024dip"
+            android:layout_height="15.0dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="@dimen/dx_8"
+            android:layout_toRightOf="@+id/tv_buy_member_item_name"
+            android:background="@color/slategray" />
+
+        <TextView
+            android:id="@+id/tv_buy_member_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center"
+            android:layout_marginLeft="@dimen/dx_25"
+            android:layout_toRightOf="@+id/tv_buy_member_item_name"
+            android:text="2元"
+            android:textColor="@color/textgrey"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_buy_member_item_favorable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dx_5"
+            android:layout_toRightOf="@+id/tv_buy_member_item_price"
+            android:background="@drawable/style_bg_sex_female"
+            android:gravity="center_vertical"
+            android:padding="2.0dip"
+            android:text="8折特惠"
+            android:textColor="@color/white"
+            android:textSize="10.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_buy_member_item_real_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/dx_15"
+            android:text="¥2"
+            android:textColor="#ff01becb"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buy_member_item_btn"
+            android:layout_width="60.0dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/style_bg_round_buyitem"
+            android:checked="false"
+            android:paddingBottom="@dimen/dx_7"
+            android:paddingLeft="@dimen/dx_15"
+            android:paddingRight="@dimen/dx_15"
+            android:paddingTop="@dimen/dx_7"
+            android:text="开通"
+            android:textColor="@color/white"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+</FrameLayout>
